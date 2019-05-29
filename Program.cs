@@ -34,27 +34,28 @@ namespace HW_5_28_2019
         }
         private static void childsplay ()
         {
+            Console.WriteLine(" if you really like candy then let me know how much you like it");
             string[] sweetsList = { "ButterFinger", "Kit-Kat", "Snickers", "Hersheys" };
 
-            Console.WriteLine(sweetsList[1]);
+            
             int yums = 0;
 
-            for(int i = 0; i < sweetsList.Length; ++i)
+            for(int i = 0; i < sweetsList.Length; i++)
             {
-                Console.WriteLine("Do you like {0},{1}?", sweetsList[i], 0);
-                Console.WriteLine("y/n");
+                Console.WriteLine("Do you like {0}?", sweetsList[i]);
+                Console.WriteLine("yes or no");
 
-                string a = Console.ReadLine().ToLower();
-                if (a == "y")
+                string si = Console.ReadLine().ToLower();
+                if (si == "yes")
                 {
                     yums++;
                 }
                 else
                 {
-                    Console.WriteLine("No yums");
+                    Console.WriteLine("yeah that stuff is trash");
                 }
 
-                Console.WriteLine("yums");
+                Console.WriteLine(yums);
 
             }
         }
@@ -62,13 +63,13 @@ namespace HW_5_28_2019
         {
             string[] bestWrestlers = { "Ric Flair", "Dusty Rhodes", "Sting", "Rowdy roddy Piper" };
 
-            Console.WriteLine(bestWrestlers[1]);
+            
             int WCW = 0;
 
-            for (int i = 0; i < bestWrestlers.Length; ++i)
+            for (int i = 0; i < bestWrestlers.Length; i++)
             {
-                Console.WriteLine("Do you like {0},{1}?", bestWrestlers[i], 0);
-                Console.WriteLine("DOpe/Nope");
+                Console.WriteLine("Do you like {0}?", bestWrestlers[i]);
+                Console.WriteLine("Dope or Nope");
 
                 string a = Console.ReadLine().ToLower();
                 if (a == "Dope")
@@ -77,10 +78,10 @@ namespace HW_5_28_2019
                 }
                 else
                 {
-                    Console.WriteLine("No They are bums");
+                    Console.WriteLine("trash");
                 }
+                Console.WriteLine(WCW);
 
-                Console.WriteLine("Yes, they would kick their A**");
 
             }
         } public static void gotit()
